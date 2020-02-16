@@ -1,3 +1,123 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+# Site settings
+baseurl = "https://ia.lei202.com/"
+languageCode = "ja-jp"
+title = "衣亜"
+theme = "hugo-stellar-theme"
+
+googleAnalytics = "" #put your google-analytics ID here
+
+[params]
+  [params.header]
+    title = "iA-荒木衣亜"
+    description = 'iAこと衣亜のサイトだよ～。'
+    image = "images/logo.svg"
+
+  [[params.navigation]]
+    name = "がいよう"
+    href = "#intro"
+
+  [[params.navigation]]
+    name = "3つに大別！"
+    href = "#first"
+
+  [[params.navigation]]
+    name = "GitHub"
+    href = "#second"
+
+  [[params.navigation]]
+    name = "Get Started"
+    href = "#cta"
+
+  [params.intro]
+    title = "ハローハローいあだよー"
+    description = "荒木 衣亜(あらき-いあ)だよ。Misskeyインスタンスの一つである『Misskey-lei』で、インスタンスの情報を発信したり、時報や占いから....色々やってるよ！"
+    image = "images/pic01.png"
+    [[params.intro.action]]
+      buttontext = "もっと詳しく！"
+      href = "generic.html"
+
+
+  [[params.section]]
+    id = "first"
+    title = "私について3つに大別！"
+    description = ""
+    
+    # the picture is storead at static/images/
+    [params.section.features]
+      enable = true
+      [[params.section.feature]]
+        title = "TypeScript(+PHP)"
+        description = "TypeScriptで動く本体と、時報等の定期投稿用のPHPの二種類で成り立っているよ。"
+        icon = "fa-code"
+
+      [[params.section.feature]]
+        title = "時報機能あるよ～"
+        description = "毎時0分に寺宝を投稿しているよ。0時や特定の時間はメッセージが変わるよ。"
+        icon = "fa-copy"
+
+      [[params.section.feature]]
+        title = "Dolor nullam"
+        description = "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat."
+        icon = "fa-diamond"
+    [params.section.footer]
+      enable = true
+      [[params.section.footer.action]]
+        buttontext = "Learn More"
+        buttonUrl = "generic.html"
+
+  [[params.section]]
+    id = "second"
+    title = "GitHubに公開されてるよ。"
+    description = "そもそも私はフォークだよ。"
+
+    [params.section.statistics]
+      enable = true
+      [[params.section.statistic]]
+        icon = "fa-code-fork"
+		value = "3"
+        text = "藍(syuilo/ai)のフォークであるいあ(mei23/ai)のフォーク、フォークのフォークって位置付けだよ。"
+
+    [params.section.content]
+      enable = true
+      text = "最初はセリフだけ、気づいたら起動時発言とかPHPでだけど時報とか...色々増えてきたよ。　　　　　　　　　　　　　レイエスの気力次第でどんどん増える(予定)よ。"
+
+  [[params.section]]
+    id = "cta"
+    title = "え？私のデータが欲しい？"
+    description = "Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet."
+    [params.section.footer]
+      enable = true
+      [[params.section.footer.action]]
+        buttontext = "Get Started"
+        buttonUrl = "generic.html"
+        customClass = "special"
+      [[params.section.footer.action]]
+        buttontext = "Learn More"
+        buttonUrl = "generic.html"
+
+  [params.footer]
+    enable = true
+    title = "レイエスって誰って？"
+    description = "私を作った人だよ。マスターって呼ぶことにしてるよ。あとは...これ見たらわかるかなぁ？"
+
+    second_title = "Contact"
+    address = "Misskey-lei"
+    email = "lei@lei202.com"
+
+    [[params.footer.action]]
+      href = "https://misskey.lei202.com/@lei202/"
+      buttontext = "こっち！"
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Email"
+        icon = "fa-envelope"
+        link = "mailto:lei@lei202.com"
+
+    # copyright
+    [params.footer.copyright]
+      enable = true
+      text = "© Untitled, Design: [HTML5UP](//html5up.net)"

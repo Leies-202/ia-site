@@ -1,0 +1,6 @@
+[submodule "themes/hugo-stellar-theme"]
+	path = themes/hugo-stellar-theme
+	url = https://github.com/antonpolishko/hugo-stellar-theme.git
+[submodule "public"]
+	path = public
+	url = https://github.com/leies-202/ia-page.git
