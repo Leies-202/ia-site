@@ -30,7 +30,7 @@ googleAnalytics = "" #put your google-analytics ID here
 
   [params.intro]
     title = "ハローハローいあだよー"
-    description = "荒木 衣亜(あらき-いあ)だよ。Misskeyインスタンスの一つである『Misskey-lei』で、インスタンスの情報を発信したり、時報や占いから....色々やってるよ！"
+    description = "荒木 衣亜(あらき-いあ)だよ。Misskeyインスタンスの一つである『れいすきー(Leisskey)』で、インスタンスの情報を発信したり、時報や占いから....色々やってるよ！"
     image = "images/pic01.png"
     [[params.intro.action]]
       buttontext = "もっと詳しく！"
